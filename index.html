@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>First Team Meeting</title>
+    <title>Disney's First Team Meeting</title>
     <meta>
-    <link>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
+
   <body>
     <header>
         <h1>Meeting Minute</h1>
-        <nav></nav>
+        <nav>
+        <a href="#attendance">Attendance</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#discussion">Discussions</a>
+        </nav>
     </header>
 
     <main>
@@ -19,7 +40,7 @@
       </section>
         
       <section>
-        <h2>Attendance: </h2>
+        <h2 id="attendance">Attendance: </h2>
         <ul>
           <li><i>Mickey</i></li>
           <li><i>Minnie</i></li>
@@ -30,7 +51,7 @@
       </section>
       <hr>
       <section>
-        <h2>Agenda</h2>
+        <h2 id="agenda">Agenda</h2>
         <ol>
           <li>Self Introduction</li>
           <li>Ice Breaker</li>
@@ -43,24 +64,23 @@
         <h2>Self Introduction: </h2>
         <h3>Mickey</h3>
         <p>Hi! I'm Mickey and I'm a third year studying Economics and Mechanical Engineering! A fun fact about me is that my first words are actually "Hot dogs!"</p>
-        <br>
         <h3>Minnie</h3>
         <p>Hello everyone! My name is Minnie and I'm a third year Dance major, and a fun fact of me would be that I come from a family of farmers.</p>
-        <br>
         <h3>Goofy</h3>
         <p>Hee-yuk! I'm Goofy and I'm majoring in English Literature! Fun fact about me is I went to school for Medical Clowning at USC!</p>
-        <br>
         <h3>Donald</h3>
         <p>I'm Donald and I'm majoring in Political Science and Aerospace Engnineering. I have served in the military and the navy.</p>
-        <br>
         <h3>Daisy</h3>
         <p>Hi, my name is Daisy and I'm a third year Psychology major, also minoring Cosmetology! A fun fact about me is that I'm dating Donald.</p>
       </section>
 
       <a href="https://skribbl.io/">Ice Breaker Activity</a>
+      <br>
+      <span>Mickey lost and Daisy won.</span>
+
       <hr>
       <section>
-        <h2>Discussion:</h2>
+        <h2 id="discussion">Discussion:</h2>
         <h3>name suggestions:</h3>
         <ul>
           <li>Great Adventure</li>
@@ -78,16 +98,52 @@
         <h3>purpose/values:</h3>
         <p>We wish to bring children joy and imagination, a safe space for them to indulge in all wonders of the world.</p>
         <b>Example Video</b>
-        <video controls><source src=""></video>
-        <audio></audio>
-      </section>
-      
-      
-      <form>
-      
-      </form>
+        <br>
+        <details>
+          <summary>Click to show</summary>
+          <video controls><source src="A Warm Welcome _ Disneyland .mp4"></video>
+          <audio controls> <source src="A Warm Welcome  Disneyland & Walt Disney World Resort.mp3" type="audio/mpeg"></audio>
+        </details>
 
-      
+        <details>
+          <summary>Blueprint</summary>
+          <img src="blueprint.jpg" alt="blueprint">
+        </details>
+       
+      </section>
+      <br>
+      <div>testing form here</div>
+      <form>
+      <fieldset>
+        <label>Name: <input type="text" name="name"></label>
+        <br>
+        <label><input type="checkbox" name="yes or no" value="yes"> Yes</label>
+        <label><input type="checkbox" name="yes or no" value="no"> No</label>
+        <br><label>Comments:</label><br>
+        <textarea name="comments" rows="2" cols="30"></textarea>
+        <br><label>Who's your favorite:
+          <select name="select one">
+              <option value="Mickey">Mickey</option>
+              <option value="Minnie">Minnie</option>
+              <option value="Donald">Donald</option>
+              <option value="Daisy">Daisy</option>
+              <option value="Goofy">Goofy</option>
+          </select>
+        </label><br><br>
+
+        <label>Favorite food:</label>
+        <input list="food" id="food" name="food"/>
+        <datalist id="food">
+          <option value="rice">
+          <option value="noodles">
+          <option value="bread">
+        </datalist>
+      </fieldset>
+      <button type="submit">Submit</button>
+      </form>
+      <br>
+
+    <footer>Everything involved in this webpage has been credited to Disney, copyrighted.</footer>  
     </main>
 
   </body>
