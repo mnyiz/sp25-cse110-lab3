@@ -1,2 +1,1 @@
-# Lab 2 - Starter
-https://mnyiz.github.io/Lab2_Starter/
+https://mnyiz.github.io/sp25-cse110-lab3/
