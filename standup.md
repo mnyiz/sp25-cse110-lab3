@@ -1,5 +1,5 @@
 # Meeting Header
-> links to section headers
+> > [Attendance](#attendance-list) [Agenda](#agenda)[Discussion](#discussion-topic)
 
 ## Meeting Type
 ### Date
