@@ -17,9 +17,9 @@ Minute-Taker
 
 ## Discussion Topic
 ### To-Do:
-- [] one thing
-- [] two thing
-- [] three thing
+- [ ] one thing
+- [ ] two thing
+- [ ] three thing
 
 discussion content
 
