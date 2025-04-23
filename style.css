@@ -1,0 +1,207 @@
+/*this is a style template for the meeting minutes*/
+
+/*fallback*/
+:root{
+    --heading-font: "Comic Sans MS";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /*fallback*/
+    color: var(--main-color, black);
+}
+
+body{
+    font-family: 'Georgia', sans-serif;
+    background-color: #e7f4ff;
+    color: black;
+    line-height: 1cm;
+}
+
+section p{
+    color: rgb(235, 33, 151);
+}
+
+p{
+    font-size: 1.5em;
+}
+
+header{
+    /*padding*/
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    font-size: 2rem;
+    width: 100vw;
+    height: 10vw;
+} 
+
+h1{
+    text-align: center;
+    position: static;
+    color: color-mix(in lch, purple 50%, pink);
+    font-style: normal;
+    font-size: 2rem;
+}
+
+#checkin{
+    position: sticky;
+}
+
+.jump{
+    line-height: 1mm;
+    color: red;
+    list-style: outside;
+}
+
+#jumpscare{
+    line-height: 1mm;
+    color: red;
+    font-size: 2em;
+}
+
+nav{
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2{
+    font-family: var(--heading-font, Arial);
+    color: rgb(32, 94, 48);
+    background-color: hsl(58, 100%, 83%);
+    text-decoration: underline;
+}
+
+h1, h2{
+    font-family: "Parisienne", cursive;
+    font-weight: 1000;
+}
+
+h2 ~ p{
+    font-style: italic;
+}
+
+h2 + p{
+    color: blue;
+}
+
+.minute-taker{
+    color: color(rec2020 0 0 1 / 0.5);
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    background-color: yellow;
+}
+
+main{
+    /*box*/
+    border: 5px dotted rgb(95, 63, 238);
+    padding: 20px 30px 20px 30px;
+    margin: 10px 50px 10px 50px;
+}
+
+section{
+    display: inline;
+}
+
+span{
+    display: inline-block;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    gap: 20px;
+    justify-items: center;
+}
+
+.intro{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+p.message{
+    color: white;
+    background-color: rgb(208, 23, 23);
+}
+
+.flex:has(strong){
+    font-family: "Parisienne", cursive;
+}
+
+ul > li{
+    list-style: square;
+}
+
+@media(max-width: 600px){
+    nav{
+        flex-direction: column;
+    }
+  
+    video, img{
+        width: 100%;
+    }
+  
+    .grid-section{
+        grid-template-columns: 1fr;
+    }
+}
+/*check*/
+
+video{
+    height: 80%;
+    width: 80%;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+fieldset {
+    border-style: dashed;
+    border-color: purple;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+footer{
+    /*margin*/
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+input[type="text"] {
+    background-color: rgb(255, 199, 67);
+}
+
+nav{
+    background-color: rgb(51, 0, 2);
+    
+    a{
+        color: white;
+        text-decoration: none;
+  
+        &:hover {
+            color: rgb(255, 0, 0);
+        }
+    }
+}
+  
